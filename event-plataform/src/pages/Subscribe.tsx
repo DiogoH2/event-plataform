@@ -1,4 +1,3 @@
-import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
@@ -29,7 +28,7 @@ async function handleSubscribe(event: FormEvent){
 
     return(
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-            <div className="w-full max-w-[1100px] lg:flex items-center lg:justify-between xl:justify-between md:flex md:flex-col sm:flex sm:flex-col mt-20 mx-auto md:p-2 sm:p-2 ">
+            <div className="w-full max-w-[1100px] items-center lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between md:flex md:flex-col sm:flex sm:flex-col mt-20 mx-auto md:p-2 sm:p-2 ">
                 <div className="max-w-[640px]">
                     <Logo />
 

@@ -17,7 +17,7 @@ export function Event() {
                     ? <Video lessonSlug={slug} />
                     : <div className="flex-1">
                         <div className="bg-black flex justify-center">
-                            <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+                            <div className="h-full w-full max-w-[1100px] max-h-[60vh] md:p-5 sm:p-5 aspect-video">
                                 <Player>
                                     <Youtube videoId="S5Qvi23VqaQ" />
                                     <DefaultUi />
