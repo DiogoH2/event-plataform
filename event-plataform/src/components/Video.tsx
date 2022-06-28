@@ -28,17 +28,16 @@ export function Video(props: VideoProps) {
     }
     return (
         <div className="flex-1">
-            <div className="bg-black flex justify-center">
-                <div className="h-full w-full max-w-[1100px] max-h-[60vh] md:p-5 sm:p-5 aspect-video">
-                    <Player>
-                        <Youtube videoId={data.lesson.videoId} />
+            <div className="bg-black flex flex-1 justify-center">
+                <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video md:z-0 sm:z-0 sm:max-w-[723px] md:max-w-[1023px] md:justify-center sm:justify-center">
+                    <Player >
+                        <Youtube videoId={data.lesson.videoId}/>
                         <DefaultUi />
                     </Player>
                 </div>
             </div>
-
-            <div className="p-8 max-w-[1100px] mx-auto">
-                <div className="flex items-start gap-16 md:flex-col sm:flex-col">
+            <div className="p-8 max-w-[1100px] mx-auto sm:max-w-[600px]">
+                <div className="flex items-start gap-16 md:flex-col sm:flex-col flex-1">
                     <div className="flex-1">
                         <h1 className="text-2xl font-bold">
                             {data.lesson.title}
@@ -61,7 +60,7 @@ export function Video(props: VideoProps) {
                             </div>
                         )}
                     </div>
-                    <div className="flex flex-col gap-4 md:flex-row sm:flex-row sm:gap-32 md:gap-72 md:pl-10">
+                    <div className="flex flex-col gap-4  sm:gap-10 md:gap-10">
                         <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
                             <DiscordLogo size={24} />
                             Comunidade do Discord

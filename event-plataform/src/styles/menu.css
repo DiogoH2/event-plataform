@@ -1,0 +1,59 @@
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .nav-slide{
+         position: fixed;
+         left: -350px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+    .nav-slide{
+    position: fixed;
+    left: -350px;
+
+    }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+
+    .button2{
+    display: none;
+    }
+
+    .stylebuttonClose{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+
+    .button2{
+    display: none;
+    }
+
+    .stylebuttonClose{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 1536px) {
+    .\32xl\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .xl\:hidden {
+        display: none;
+    }
+}

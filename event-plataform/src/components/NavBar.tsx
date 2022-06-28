@@ -1,17 +1,19 @@
-import { gql, useQuery } from "@apollo/client";
-import { useState } from "react";
+
 import { useGetLessonsQuery } from "../graphql/generated";
 import { Lesson } from "./Lesson";
 
+import { useState } from "react";
 
 
-export function Sidebar() {
+export function NavBar() {
 
     const { data } = useGetLessonsQuery()
 
+    const [style, setStyle] = useState("nav-slide");
+    
     return (
-        <div>
-            <aside className="w-[348px] h-full bg-gray-700 p-6 border-l border-gray-600 md:hidden sm:hidden">
+        <div className="flex justify-end items-end w-[348px] h-full bg-gray-700 p-6 border-l border-gray-600">
+            <aside className={style}>
                 <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
                     Cronograma de Aulas
                 </span>

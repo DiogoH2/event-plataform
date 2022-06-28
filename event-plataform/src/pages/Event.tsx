@@ -10,14 +10,14 @@ export function Event() {
     const { slug } = useParams<{ slug: string }>()
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen ">
             <Header />
             <main className="flex flex-1">
                 {slug
                     ? <Video lessonSlug={slug} />
                     : <div className="flex-1">
                         <div className="bg-black flex justify-center">
-                            <div className="h-full w-full max-w-[1100px] max-h-[60vh] md:p-5 sm:p-5 aspect-video">
+                            <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
                                 <Player>
                                     <Youtube videoId="S5Qvi23VqaQ" />
                                     <DefaultUi />
@@ -46,4 +46,4 @@ export function Event() {
 
         </div>
     )
-}
+                }
